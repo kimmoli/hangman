@@ -85,7 +85,7 @@ SilicaFlickable {
         }
         Button {
             id: resetButton
-            text: "Reset"
+            text: "Uusi sana"
             anchors.bottom: parent.bottom
             anchors.bottomMargin: Theme.paddingLarge
             anchors.horizontalCenter: parent.horizontalCenter
@@ -134,7 +134,7 @@ SilicaFlickable {
         id: pullDownMenu
         MenuItem {
             id: revealMenuItem
-            text: "Reveal"
+            text: "Paljasta"
             onClicked: {
                 applicationData.reveal();
                 topLevel.state = "GAMEOVER"
@@ -142,7 +142,7 @@ SilicaFlickable {
         }
         MenuItem {
             id: guessMenuItem
-            text: "Guess Word"
+            text: "Arvaa sana"
             onClicked: {
                 applicationWindow.pageStack.push("WordInputDialog.qml")
                 //wordInputDialog.visible = true;
@@ -151,7 +151,7 @@ SilicaFlickable {
         }
         MenuItem {
             id: resetMenuItem
-            text: "Reset"
+            text: "Uusi sana"
             onClicked: {
                 letterSelector.reset();
                 applicationData.reset();

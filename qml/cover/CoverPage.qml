@@ -38,7 +38,7 @@ CoverBackground {
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.topMargin: Theme.paddingLarge
-        text: "Hangman"
+        text: "Hirsipuu"
     }
 
     Hangman {
@@ -55,18 +55,6 @@ CoverBackground {
         width: parent.width * 0.8
         height: parent.height * 0.1
     }
-
-//    CoverActionList {
-//        id: coverAction
-
-//        CoverAction {
-//            iconSource: "image://theme/icon-cover-next"
-//        }
-
-//        CoverAction {
-//            iconSource: "image://theme/icon-cover-pause"
-//        }
-//    }
 }
 
 

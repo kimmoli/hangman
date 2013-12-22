@@ -206,7 +206,7 @@ Rectangle {
     }
 
     Text {
-        text: "Game Over"
+        text: "Peli päättyi"
         anchors.centerIn: parent
         opacity: gameOver ? 1.0 : 0.0
         visible: opacity > 0.0
@@ -230,7 +230,7 @@ Rectangle {
     }
 
     Text {
-        text: "SUCCESS"
+        text: "ONNISTUIT"
         anchors.centerIn: parent
         opacity: success ? 1.0 : 0.0
         visible: opacity > 0.0

@@ -10,7 +10,7 @@ Item {
 
     property var keys: [keyA, keyB, keyC, keyD, keyE, keyF, keyG, keyH, keyI, keyJ,
             keyH, keyJ, keyK, keyL, keyM, keyN, keyO, keyP, keyQ, keyR, keyS,
-            keyT, keyU, keyV, keyW, keyX, keyY, keyZ];
+            keyT, keyU, keyV, keyW, keyX, keyY, keyZ, keyÅ, keyÄ, keyÖ];
 
     function reset() {
         //Resets all key values to their default state
@@ -44,6 +44,7 @@ Item {
     signal letterSelected(string letter)
 
     //Qwerty layout
+    //Added Å,Ö,Ä
     Column {
         spacing: keyView.verticalSpacing
         anchors.fill: parent
@@ -82,7 +83,7 @@ Item {
                 purchasable: true
                 onKeyActivated: {
                     letterSelected(letter);
-
+                    available = false;
                 }
             }
             Key {
@@ -130,6 +131,7 @@ Item {
                 purchasable: true
                 onKeyActivated: {
                     letterSelected(letter);
+                    available = false;
                 }
             }
             Key {
@@ -141,6 +143,7 @@ Item {
                 purchasable: true
                 onKeyActivated: {
                     letterSelected(letter);
+                    available = false;
                 }
             }
             Key {
@@ -152,6 +155,7 @@ Item {
                 purchasable: true
                 onKeyActivated: {
                     letterSelected(letter);
+                    available = false;
                 }
             }
             Key {
@@ -179,6 +183,7 @@ Item {
                 purchasable: true
                 onKeyActivated: {
                     letterSelected(letter);
+                    available = false;
                 }
             }
             Key {
@@ -277,6 +282,18 @@ Item {
                     available = false;
                 }
             }
+            Key {
+                id: keyÅ
+                height: keyView.keyHeight
+                width: keyView.keyWidth
+                text: "Å";
+                available: true
+                purchasable: false
+                onKeyActivated: {
+                    letterSelected(letter);
+                    available = false;
+                }
+            }
         }
         Row {
             spacing: keyView.horizontalSpacing
@@ -358,6 +375,30 @@ Item {
                 height: keyView.keyHeight
                 width: keyView.keyWidth
                 text: "M";
+                available: true
+                purchasable: false
+                onKeyActivated: {
+                    letterSelected(letter);
+                    available = false;
+                }
+            }
+            Key {
+                id: keyÖ
+                height: keyView.keyHeight
+                width: keyView.keyWidth
+                text: "Ö";
+                available: true
+                purchasable: false
+                onKeyActivated: {
+                    letterSelected(letter);
+                    available = false;
+                }
+            }
+            Key {
+                id: keyÄ
+                height: keyView.keyHeight
+                width: keyView.keyWidth
+                text: "Ä";
                 available: true
                 purchasable: false
                 onKeyActivated: {

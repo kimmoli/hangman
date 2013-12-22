@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>enable2.txt</file>
+        <file>words_fi.txt</file>
     </qresource>
 </RCC>

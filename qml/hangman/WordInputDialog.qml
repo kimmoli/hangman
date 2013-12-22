@@ -21,7 +21,7 @@ Page {
 
         Label {
             id: label
-            text: "What's the word?"
+            text: "Mikä sana on?"
             font.pixelSize: Theme.fontSizeLarge
             font.family: Theme.fontFamily
             anchors.horizontalCenter: parent.horizontalCenter
@@ -36,7 +36,7 @@ Page {
             horizontalAlignment: Text.AlignHCenter
             focus: true
 
-            EnterKey.text: "Guess"
+            EnterKey.text: "Arvaa"
             EnterKey.onClicked: {
                 dialog.guess();
             }
@@ -49,7 +49,7 @@ Page {
             spacing: 8
             Button {
                 id: okButton
-                text: "Guess"
+                text: "Arvaa"
 
                 onClicked: {
                     dialog.guess();
@@ -57,7 +57,7 @@ Page {
             }
             Button {
                 id: cancelButton
-                text: "Cancel"
+                text: "Peruuta"
 
                 onClicked: {
                     input.text = ""

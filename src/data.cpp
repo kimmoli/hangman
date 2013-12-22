@@ -23,7 +23,7 @@ void Data::initWordList()
 {
     QMutexLocker locker(&m_lock);
     qsrand(::time(0) + 1000);
-    QFile file(":/enable2.txt");
+    QFile file(":/words_fi.txt");
     if (file.open(QIODevice::ReadOnly)) {
         QByteArray allData = file.readAll();
         QBuffer buffer(&allData);
@@ -60,7 +60,7 @@ void Data::chooseRandomWord()
 
 QString Data::vowels() const
 {
-    return QStringLiteral("AEIOU");
+    return QStringLiteral("AEIOUÅÖÄ");
 }
 
 QString Data::consonants() const
